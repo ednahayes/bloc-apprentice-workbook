@@ -20,16 +20,17 @@ to write code with meaning
 ### Exercises
 
 1. Write a paragraph tag with a class of "highlight" and content "Watch out!".
-<p> <div class highlight = "Watch out!"> </p>
+<p> <div class="highlight">"Watch out!"</p>
 
 2. Write an HTML image tag to show an image called `profile-picture.jpg`.
 <img src="profile-picture.jpg"> 
 
 3. Write a link tag that links to http://google.com.
-<a href="http://google.com"> </a>
+<a href="http://google.com"></a>
 
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
   <head>
   </head>
   <body>
@@ -37,8 +38,8 @@ to write code with meaning
 </html>
 
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`
-<!DOCTYPE html>
-<head>
+<!DOCTYPE HTML>
+<html>
 </head>
 <body>
 <script src="main.js">></script>
@@ -91,7 +92,7 @@ padding is outside the content, and margin is the most outer box outside the bor
 
 1. Write a CSS rule to make the text of all `h1` tags red.
 
-h { text-color: red;}
+h1 { color: red;}
 
 2. Write a CSS rule to make the background color of the link with `class="btn"` blue:
 
@@ -99,7 +100,7 @@ h { text-color: red;}
   <a href="#" class="btn">Learn more</a>
   ```
   
-  class:btn { background-color: blue;}
+  .btn { background-color: blue;}
   
 
 3. Write a CSS rule to give the first paragraph in the following HTML a font size of `20px`, but not the second paragraph.
@@ -131,7 +132,7 @@ local is the variable that is within the function, global goes beyond the local 
 is a value that is true or false
 
 5. What is an array?
-is multiple values 
+is a container that stores multiple values 
 
 ### Exercises
 
@@ -200,7 +201,7 @@ sayHello("Edna");
 
   console.log(helloGoodbye("Sarah"));
   ```
-Goodbye Sarah !
+"Hello" "Sarah" "Goodbye " Sarah
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
 
@@ -214,21 +215,24 @@ function findLongestWord(array) {
 
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
 
-function sum () {
-    for (var i = 0; array.length; i++) {
-     sum += array.length[i];
+function sum(array) {
+  var list= 0;
+    for (var i = 0; i<array.length; i++) {
+      list += array[i];
 }
- return sum;
+ return list;
 }
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 
-function character () {
-  if ( charAt(1) == vowel) {
+function character(string) {
+  var vowel = ["a", "e", "i", "o", "u"]
+  if (string.charAt(0) == vowel) {
     return true;
 }
   else {
     return false;
+}
 }
 
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
@@ -243,6 +247,8 @@ function character () {
     }
   };
   ```
+  
+  
   
 
 12. Using the same script as above, write the correct line to log the dog's name to the console.
