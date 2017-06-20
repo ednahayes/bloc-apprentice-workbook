@@ -242,18 +242,18 @@ function character(string) {
     name: "Charles",
     goodDog: true,
     speak: function() {
-    if (name + goodDog == "Charles" + true);
-      console.log("Woof!");
+        console.log("Woof!");
     }
   };
   ```
+  pet.speak();
   
   
   
 
 12. Using the same script as above, write the correct line to log the dog's name to the console.
 
-console.log(name);
+console.log(pet.name);
 
 ## Command Line
 
