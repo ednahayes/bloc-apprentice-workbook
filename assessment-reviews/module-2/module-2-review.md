@@ -12,9 +12,21 @@
 
 ### Questions
 
-1. What is the box model?
+1. What is the box model? 
+is the design & layout that wraps around HTML
+
 2. What is the difference between block and inline elements?
+
+Block examples are structural elements, inline they are text-based.
+Block elements begin in new lines, inline elements do not begin on new lines
+Block Takes up the full width available, with a new line before and after 
+Inline Takes up only as much width as it needs, and does not force new lines 
+
+
 3. What is responsive design?
+
+
+
 4. Which selector is more specific, a tag selector or class selector?
 5. What does `box-sizing` do?
 6. What's the difference between `relative` and `absolute` positioning?
