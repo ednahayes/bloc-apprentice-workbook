@@ -211,7 +211,7 @@ console.log("click")
 The framework is in charge and it calls into your code when it needs something app specific, a library Your code is in charge and it calls into the library when it sees fit
 
 2. What is a controller? 
-a Controller is defined by a JavaScript constructor function that is used to augment the Angular Scope.
+a Controller is defined by a JavaScript constructor function that is used to augment the Angular Scope. In the model-view-controller organization pattern, the controller contains the logic for interaction and behavior.
 
 3. What is a view?
 what the user sees (the DOM)
@@ -220,7 +220,7 @@ what the user sees (the DOM)
 are Web apps that load a single HTML page and dynamically update that page as the user interacts with the app
 
 5. What is a directive in Angular?
-are extended HTML attributes with the prefix ng- . The ng-app directive initializes an AngularJS application.
+are extended HTML attributes with the prefix ng- . The ng-app directive initializes an AngularJS application. A directive is any extension to HTML provided by Angular.
 
 ## Git
 
